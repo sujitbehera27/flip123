@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://jhipster.github.io/ -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+@charset "UTF-8";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak,
+	.x-ng-cloak, .ng-hide:not ( .ng-hide-animate ) {
+	display: none ! important;
+}
+
+ng\:form {
+	display: block;
+}
+
+.ng-animate-shim {
+	visibility: hidden;
+}
+
+.ng-anchor {
+	position: absolute;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="./css/table_style1.css">
+
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#353d47">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#353d47">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#353d47">
+<title>JHipster - Generate your Spring Boot + AngularJS apps!</title>
+
+<!-- Fonts -->
+<link href="css/css" rel="stylesheet" type="text/css">
+<link href="css/css(1)" rel="stylesheet" type="text/css">
+<link href="css/css(2)" rel="stylesheet" type="text/css">
+<link href="css/css(3)" rel="stylesheet" type="text/css">
+<link href="css/css(4)" rel="stylesheet" type="text/css">
+
+<!-- CSS Libs -->
+<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="./css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="./css/dataTables.bootstrap.css">
+<!-- CSS App -->
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/flat-blue.css">
+
+<link rel="stylesheet" type="text/css" href="./css/home.css">
+<link rel="stylesheet" type="text/css" href="./css/news.css">
+<link rel="stylesheet" type="text/css" href="./css/ace_editor.css">
+
+<!-- Favicon with QHD -->
+<link rel="icon" type="image/png" href="https://jhipster.github.io/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://jhipster.github.io/img/favicon-16x16.png" sizes="16x16">
+
+<script async="" src="js/async-ads.js"></script>
+<script src="js/jsapi" type="text/javascript"></script>
+<link type="text/css" href="./css/default+en.css" rel="stylesheet">
+<link type="text/css" href="./css/minimalist.css" rel="stylesheet">
+<link rel="import" href="views/listings.html">
+<script type="text/javascript" src="js/default+en.I.js"></script>
+<script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+<style type="text/css">
+
+</style>
+
+</head>
+
+<body class="flat-blue">
+
+    <div class="app-container home">
+        <div class="row content-container">
+            <nav class="navbar navbar-inverse navbar-fixed-top navbar-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-expand-toggle">
+                            <i class="fa fa-bars icon"></i>
+                        </button>
+                        <ol class="breadcrumb navbar-breadcrumb">
+                            <li class="active"></li>
+                        </ol>
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                            <i class="fa fa-th icon"></i>
+                        </button>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs light">
+                            <i class="fa fa-times icon"></i>
+                        </button>
+                        <!-- <li class="page-scroll"><a href="#about">Search</a></li> -->
+                        <li class="page-scroll"><a href="#quick">Flip Listings</a></li>
+                        <li class="page-scroll"><a href="#about">News</a></li>
+                        <!-- <li class="page-scroll"><a href="#opts">Flip Listing</a></li> -->
+                        <li class="page-scroll"><a href="#histflip">Successful
+								flips</a></li>
+
+                        <li class="page-scroll active"><a href="#modules">Services</a>
+                        </li>
+
+                        <li class=""><a href="https://github.com/sujitbehera27" class="dropdown-toggle navlink" target="_blank" role="button"><i
+								class="fa fa-user fa-1x"></i>Sujit</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+            <div class="side-menu sidebar-inverse">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="side-menu-container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html">
+                                <div class="icon">
+                                    <img src="images/logo1.png" height="50px">
+                                </div>
+                                <div class="title" style="padding-left: 5%;">Home Flipper</div>
+                            </a>
+                            <button type="button" class="navbar-expand-toggle pull-right visible-xs">
+                                <i class="fa fa-times icon"></i>
+                            </button>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href=""> <span class="icon fa fa-home"></span><span class="title">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""> <span class="icon fa fa-file-text-o"></span><span class="title">Release notes</span>
+                                </a>
+                            </li>
+                            <li class="panel panel-default dropdown">
+                                <a data-toggle="collapse" href="" class="collapsed" aria-expanded="false"> <span class="icon fa fa-road"></span><span class="title">Home Flipper in a few minutes</span>
+                                </a>
+                                <!-- Dropdown level 1 -->
+                                <div id="dropdown-1" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-stack-overflow"></i> Technology stack</a></li>
+                                            <li><a href="./views/1.html" target="_blank"><i
+													class="fa fa-fw fa-desktop"></i> Official JHipster slides</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-picture-o"></i> JHipster in 5
+													screenshots</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-film"></i> Video tutorial (20 minutes)</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-thumbs-up"></i> Companies using JHipster</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel panel-default dropdown">
+                                <a data-toggle="collapse" href="" class="collapsed" aria-expanded="false"> <span class="icon fa fa-fw fa-wrench"></span><span class="title">Setting up your environment</span>
+                                </a>
+                                <!-- Dropdown level 1 -->
+                                <div id="dropdown-2" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-cloud-download"></i> Installing JHipster</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-exchange"></i> Configuring a proxy</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-laptop"></i> JHipster App</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-keyboard-o"></i> Configuring your IDE</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-music"></i> Docker Compose</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-terminal"></i> Shell Plugins</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel panel-default dropdown"><a data-toggle="collapse" href="https://jhipster.github.io/#dropdown-3" class="collapsed" aria-expanded="false"><span class="icon fa fa-fw fa-list-ol"></span><span
+									class="title">Core Flipping tasks</span></a>
+                                <div id="dropdown-3" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw  fa-sitemap"></i> menu</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-rocket"></i> menu</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-bolt"></i> menu</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-bolt"></i> menu</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-briefcase"></i> menu</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-sitemap"></i> menu</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-flag"></i> menu</a></li>
+                                            <li><a href="./views/1.html"><i
+													class="fa fa-fw fa-refresh"></i> menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="panel panel-default dropdown"><a data-toggle="collapse" href="/#dropdown-6" class="collapsed" aria-expanded="false"><span
+									class="icon fa fa-fw fa-umbrella"></span><span class="title">Insurance</span></a>
+                                <div id="dropdown-6" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="/running-tests/"><i
+													class="fa fa-fw fa-shield"></i> menu</a></li>
+                                            <li><a href="/code-quality/"><i
+													class="fa fa-fw fa-diamond"></i> menu</a></li>
+                                            <li><a href="/setting-up-ci/"><i
+													class="fa fa-fw fa-stethoscope"></i> menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel panel-default dropdown"><a data-toggle="collapse" href="/#dropdown-7" class="" aria-expanded="true"><span
+									class="icon fa fa-fw fa-line-chart"></span><span class="title">Production</span></a>
+                                <div id="dropdown-7" class="panel-collapse collapse in" aria-expanded="true">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="/production/"><i
+													class="fa fa-fw fa-play-circle"></i> menu</a></li>
+                                            <li><a href="/monitoring/"><i
+													class="fa fa-fw fa-line-chart"></i> Monitoring</a></li>
+                                            <li><a href="/docker-hub/"><i
+													class="fa fa-fw fa-cloud-upload"></i> menu 1</a></li>
+                                            <li><a href="/cloudfoundry/"><i
+													class="fa fa-fw fa-cloud-upload"></i> menu 2</a></li>
+                                            <li><a href="/heroku/"><i
+													class="fa fa-fw fa-cloud-upload"></i> menu 3</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel panel-default dropdown"><a data-toggle="collapse" href="/#dropdown-8" class="collapsed" aria-expanded="false"><span class="icon fa fa-fw fa-cubes"></span><span
+									class="title">Modules</span></a>
+                                <div id="dropdown-8" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="/modules/marketplace/"><i
+													class="fa fa-fw fa-shopping-cart"></i> Marketplace</a></li>
+                                            <li><a href="/modules/creating-a-module/"><i
+													class="fa fa-fw fa-cube"></i> Creating a module</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="panel panel-default dropdown"><a data-toggle="collapse" href="/#dropdown-9" class="collapsed" aria-expanded="false"><span class="icon fa fa-fw fa-wrench"></span><span
+									class="title">Tools</span></a>
+                                <div id="dropdown-9" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="/jdl/"><i
+													class="fa fa-fw fa-calculator"></i> Mortgage Claculator</a></li>
+                                            <li><a href="/jdl-studio/"><i
+													class="fa fa-fw fa-calculator"></i> EMI Calculator</a></li>
+                                            <li><a href="/jhipster-uml/"><i
+													class="fa fa-fw fa-magic"></i> menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="/tips/"><span class="icon fa fa-fw fa-cogs"></span><span
+									class="title">Tips'n tricks</span></a></li>
+                            <li class="panel panel-default dropdown"><a data-toggle="collapse" href="/#dropdown-10" class="collapsed" aria-expanded="false"><span
+									class="icon fa fa-fw fa-question"></span><span class="title">Getting
+										help</span></a>
+                                <div id="dropdown-10" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="/help/"><i class="fa fa-fw fa-users"></i>
+													Community help</a></li>
+                                            <li><a href="/consulting/"><i
+													class="fa fa-fw fa-user-md"></i> help</a></li>
+                                            <li><a href="/training/"><i
+													class="fa fa-fw fa-graduation-cap"></i> Training</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+            </div>
+            <!-- Main Content -->
+
+            <div id="page-wrapper" class="container-fluid">
+                <div class="side-body" id="page-top">
+                    <div ng-app="jhipster.home" class="home-container ng-scope">
+                        <!-- Header -->
+                        <header class="home-section">
+                            <div style="background-image: url(images/house6.jpg); background-size: contain; border: 2px solid darkgray;">
+                                <div class="container">
+                                   <div class="row">
+                                        <div class="col-lg-8 col-lg-offset-2">
+                                            <div class="row control-group" style="background-color: #3645f4; opacity: 0.7; border-radius: 5px;">
+	                                             <div class="row" style="margin-left: 20px;margin-top: 8px;">
+	                                                <div class="form-group col-xs-12 floating-label-form-group controls" style="width: 90%;">
+	                                                   <input type="text" ng-model="searchText" class="form-control search-text ng-pristine ng-untouched ng-invalid ng-invalid-required" placeholder="Search by Neighborhood, City, or Address" id="name" required="" data-validation-required-message="Please enter a module to search">
+													</div>
+													<div class="col-sm-1" style="top:-5px;right:8px;">
+			                                         	<i class="icon fa fa-search fa-3x"></i>
+			                                         </div>
+			                                     </div>
+		                                         
+													<div class="btn-toolbar" role="toolbar" style="margin-left: 5px;">
+    													
+    													<div class="btn-group btn-group-xs" style="top:5px;"><span>Search By : </span></div>
+													    <div class="btn-group btn-group-xs">
+													    
+													        <button type="button" class="btn btn-warning btn-xs dropdown-toggle" data-toggle="dropdown" href="#">
+													            <span class='fa fa-bed ' style="color: blue;"></span>
+													            <span class='fa fa-caret-down ' style="color: blue;"></span>
+													        </button>
+													        <ul class="dropdown-menu" role="menu">
+													          	<li><a href="#">2</a></li>
+															    <li><a href="#">3</a></li>
+															    <li><a href="#">4+</a></li>
+													        </ul>
+													    </div>
+													    <div class="btn-group btn-group-xs">
+													        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#">
+													            <span class='fa fa-bath ' style="color: blue;"></span>
+													            <span class='fa fa-caret-down ' style="color: blue;"></span>
+													        </button>
+													        <ul class="dropdown-menu" role="menu">
+													           <li><a href="#">1</a></li>
+															    <li><a href="#">2</a></li>
+															    <li><a href="#">3+</a></li>
+													        </ul>
+													    </div>
+													    <div class="btn-group btn-group-xs">
+													        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#">
+													            <span class='fa fa-car ' style="color: blue;"></span>
+													            <span class='fa fa-caret-down ' style="color: blue;"></span>
+													        </button>
+													        <ul class="dropdown-menu" role="menu">
+													           <li><a href="#">1</a></li>
+															    <li><a href="#">2</a></li>
+															    <li><a href="#">3+</a></li>
+													        </ul>
+													    </div>
+													     <div class="btn-group btn-group-xs">
+													        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#">
+													            <span class='fa fa-dollar ' style="color: blue;"></span>
+													            <span class='fa fa-caret-down ' style="color: blue;"></span>
+													        </button>
+													        <ul class="dropdown-menu" role="menu">
+													           <li><a href="#">$50,000 - $100,000</a></li>
+															    <li><a href="#">$100,000 - $150,000</a></li>
+															    <li><a href="#">$150,000 - $300,000</a></li>
+															    <li><a href="#">$300,000 +</a></li>
+													        </ul>
+													    </div>
+													    <div class="btn-group btn-group-xs" style="margin-left: 40%;">
+													      <button type="button" class="btn btn-warning btn-xs" data-target="#myModal" style="color: blue;">Recent Searches</button>
+				                                   		</div>
+				                                   		<div class="btn-group btn-group-xs">
+				                                   		  <button type="button" class="btn btn-warning btn-xs" data-target="#myModal" style="color: blue;">Maximum Searches</button>
+				                                 
+													    </div>
+													</div>
+													  
+													
+				                                 
+				                                 
+                                            </div>
+                                   		</div>  
+                                  </div>
+                                 
+                                    <div class="row">
+                                        <div class="col-lg-14">
+                                            <!-- <div class="logo-big">
+											<img class="img-responsive" src="images/home/1.png" alt="">
+
+										</div>  -->
+
+                                            <div class="intro-text">
+                                                <!-- <span class="brand">Greetings, Home Flipper!</span> -->
+                                                <!--   -->
+                                                <div class="row stats" style="margin-top: 15%;">
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                        <a href="" target="_blank">
+                                                            <div class="card dark summary-inline">
+                                                                <div class="card-body">
+                                                                    <i class="icon fa fa-smile-o fa-3x"></i>
+                                                                    <div class="content">
+                                                                        <div class="title ng-binding">223</div>
+                                                                        <div class="sub-title">Home Flipped This month</div>
+                                                                    </div>
+                                                                    <div class="clear-both"></div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                        <a href="" target="_blank">
+                                                            <div class="card dark summary-inline">
+                                                                <div class="card-body">
+                                                                    <i class="icon fa fa-tachometer fa-3x"></i>
+                                                                    <div class="content">
+                                                                        <div class="title ng-binding">$5.2 million</div>
+                                                                    </div>
+                                                                    <div class="clear-both"></div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                        <a href="#" target="_blank">
+                                                            <div class="card dark summary-inline">
+                                                                <div class="card-body">
+                                                                    <i class="icon fa fa-users fa-3x"></i>
+                                                                    <div class="content">
+                                                                        <div class="title ng-binding">2530</div>
+                                                                        <div class="sub-title">Members</div>
+                                                                    </div>
+                                                                    <div class="clear-both"></div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="row stats1">
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                        <a href="" target="_blank">
+                                                            <div class="card dark summary-inline">
+                                                                <div class="card-body">
+                                                                    <i class="icon fa fa-smile-o fa-3x"></i>
+                                                                    <div class="content">
+                                                                        <div class="title ng-binding">223</div>
+                                                                        <div class="sub-title">Home Flipped This month</div>
+                                                                    </div>
+                                                                    <div class="clear-both"></div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                        <a href="" target="_blank">
+                                                            <div class="card dark summary-inline">
+                                                                <div class="card-body">
+                                                                    <i class="icon fa fa-tachometer fa-3x"></i>
+                                                                    <div class="content">
+                                                                        <div class="title ng-binding">$5.2 million</div>
+                                                                        <div class="sub-title">Dollars out there</div>
+                                                                    </div>
+                                                                    <div class="clear-both"></div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                        <a href="" target="_blank">
+                                                            <div class="card dark summary-inline">
+                                                                <div class="card-body">
+                                                                    <i class="icon fa fa-users fa-3x"></i>
+                                                                    <div class="content">
+                                                                        <div class="title ng-binding">2530</div>
+                                                                        <div class="sub-title">Members</div>
+                                                                    </div>
+                                                                    <div class="clear-both"></div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" style="left: 170px; height: 700px; width: 1000px;">
+                                <div class="modal-content">
+                                <div class="modal-header" style="margin-top: 2px;height:10px;border-bottom: 0px solid #e5e5e5">
+          								<button type="button" class="close" data-dismiss="modal">&times;</button>
+          							</div>
+                                    <div class="modal-body">
+                                    
+                                        <div class="container">
+                                            <div class="col-xs-7" style="height: 550px; width: 475px; border: 0px solid grey;">
+                                                <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                                                    <!-- Carousel indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                                        <li data-target="#myCarousel2" data-slide-to="2"></li>
+
+                                                    </ol>
+                                                    <!-- Wrapper for carousel items -->
+                                                    <div class="carousel-inner" style="width: 104%; padding: 0 5px;">
+                                                        <div class="item active">
+                                                            <img src="images/home1.jpg" alt="First Slide">
+
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="images/room2.jpg" alt="Second Slide">
+
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="images/room3.jpg" alt="Third Slide">
+
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- Carousel controls -->
+                                                    <a class="carousel-control left" href="#myCarousel2" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" style="padding: 15px; color: #fff; background-color: rgba(0, 0, 0, 0);"></span>
+                                                    </a>
+                                                    <a class="carousel-control right" href="#myCarousel2" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" style="padding-left: 5px; color: #fff; background-color: rgba(0, 0, 0, 0);"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="row" style="margin-top: 5%;width: 80%;margin-left: 10%;">
+                                                    <table id="table_detail" style="align: left;cellpadding=5px;">
+                                                        <tr>
+                                                            <td>Type : Town House</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Built Year : 1964</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Price : $135,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Flip price : $170,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Beds : 4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>bath : 3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Distance from School : 5 miles</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Train Station : 3 miles</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-7" style="height: 550px; width: 475px; border: 0px solid grey">
+                                                <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                                                    <!-- Carousel indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#myCarousel1" data-slide-to="1"></li>
+                                                        <li data-target="#myCarousel1" data-slide-to="2"></li>
+
+                                                    </ol>
+                                                    <!-- Wrapper for carousel items -->
+                                                    <div class="carousel-inner" style="width: 104%; padding: 0 5px;">
+                                                        <div class="item active">
+                                                            <img src="images/home7.jpg" alt="First Slide">
+
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="images/room1.jpg" alt="Second Slide">
+
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="images/room2.jpg" alt="Third Slide">
+
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- Carousel controls -->
+                                                    <a class="carousel-control left" href="#myCarousel1" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" style="padding: 15px; color: #fff; background-color: rgba(0, 0, 0, 0);"></span>
+                                                    </a>
+                                                    <a class="carousel-control right" href="#myCarousel1" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" style="padding-left: 5px; color: #fff; background-color: rgba(0, 0, 0, 0);"></span>
+                                                    </a>
+                                                </div>
+                                                <div class="row" style="margin-top: 5%;width: 80%;margin-left: 10%;">
+                                                    <table id="table_detail" style="align: left;cellpadding=5px;">
+                                                        <tr>
+                                                            <td>Type : Town House</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Built Year : 1964</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Price : $135,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Flip price : $170,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Beds : 4</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>bath : 3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Distance from School : 5 miles</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Train Station : 3 miles</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                        <section class="home-section" id="quick">
+                        </section>
+                        </div>
+                        <!-- about and news section -->
+                        <section id="about" class="home-section">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <h2 class="heading">RealEstate news and events</h2>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <section class="container">
+                                            <div class="row two-equal-columns js-stack" data-vr-zone="Stack">
+                                                <div class="column">
+                                                    <ul class="module homepage-stack">
+                                                        <li class="" time="1476976261000" data-vr-contentbox="">
+                                                            <article>
+                                                                <a href="http://money.cnn.com/2016/10/20/real_estate/donald-trump-queens-home/index.html?iid=SF_LN" class="homepage-stack-hed">
+                                                                    <div class="homepage-stack-hed-container">Owners of Donald Trump's childhood home postpone auction</div>
+                                                                </a>
+                                                            </article>
+                                                        </li>
+                                                        <li class="" time="1422892393000" data-vr-contentbox="">
+                                                            <article>
+                                                                <a href="http://money.cnn.com/calculator/real_estate/mortgage-payment/?iid=SF_LN" class="homepage-stack-hed">
+                                                                    <div class="homepage-stack-hed-container">What will your monthly mortgage payment be?</div>
+                                                                </a>
+                                                            </article>
+                                                        </li>
+                                                        <li class="" time="1476895693000" data-vr-contentbox="">
+                                                            <article>
+                                                                <a href="http://money.cnn.com/2016/10/19/real_estate/vancouver-foreigner-buyer-tax-seattle-market/index.html?iid=SF_LN" class="homepage-stack-hed">
+                                                                    <div class="homepage-stack-hed-container">For foreign home buyers, this U.S. city is the next big thing
+                                                                    </div>
+                                                                </a>
+                                                            </article>
+                                                        </li>
+                                                        <li class="" time="1476809198000" data-vr-contentbox="">
+                                                            <article>
+                                                                <a href="http://money.cnn.com/2016/10/18/real_estate/donald-trump-queens-home-auction/index.html?iid=SF_LN" class="homepage-stack-hed">
+                                                                    <div class="homepage-stack-hed-container">Donald Trump's childhood home is going up for auction</div>
+                                                                </a>
+                                                            </article>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="column">
+                                                    <ul class="module homepage-stack">
+                                                        <li class="" time="1475013284000" data-vr-contentbox="">
+                                                            <article>
+                                                                <a href="http://money.cnn.com/2016/09/27/real_estate/global-housing-markets-bubble-risk/index.html?iid=SF_LN" class="homepage-stack-hed">
+                                                                    <div class="homepage-stack-hed-container">6 global cities that could be in housing bubble</div>
+                                                                </a>
+                                                            </article>
+                                                        </li>
+                                                        <li class="" time="1383667809000" data-vr-contentbox="">
+                                                            <article>
+                                                                <a href="http://money.cnn.com/calculator/pf/home-rate-of-return/?iid=SF_LN" class="homepage-stack-hed">
+                                                                    <div class="homepage-stack-hed-container">Was my home a good investment?</div>
+                                                                </a>
+                                                            </article>
+                                                        </li>
+                                                        <li class="" time="1474574767000" data-vr-contentbox="">
+                                                            <article>
+                                                                <a href="http://money.cnn.com/2016/09/22/real_estate/incomes-rise-faster-than-home-values/index.html?iid=SF_LN" class="homepage-stack-hed">
+                                                                    <div class="homepage-stack-hed-container">Here's some good news for house hunters</div>
+                                                                </a>
+                                                            </article>
+                                                        </li>
+                                                        <li class="" time="1474555688000" data-vr-contentbox="">
+                                                            <article>
+                                                                <a href="http://money.cnn.com/gallery/real_estate/2016/09/22/hottest-real-estate-markets-2016/index.html?iid=SF_LN" class="homepage-stack-hed">
+                                                                    <div class="homepage-stack-hed-container">Homes in these ZIP codes are selling like crazy</div>
+                                                                </a>
+                                                            </article>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <section class="home-section" id="histflip">
+
+                                <div class="row no-margin">
+                                    <div class="col-lg-12 text-center">
+                                        <h2 class="heading">Successful Flips</h2>
+
+                                    </div>
+                                </div>
+                                <div class="row no-margin" style="width: 70%; margin-left: 15%;">
+
+                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Carousel indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                                        </ol>
+                                        <!-- Wrapper for carousel items -->
+                                        <div class="carousel-inner" style="width: 104%; padding: 0 5px;">
+                                            <div class="item active">
+                                                <img src="images/home1.jpg" alt="First Slide">
+                                                <div>
+
+                                                    <h5 style="font-weight: 200; opacity: 0.7; -moz-opacity: 0.30; background-color: white; border: 2px solid white; position: absolute; top: 80%; left: 59%; width: 350px; height: 75px; color: black;">
+												<i class="icon fa fa-home fa-lg" style="color: Green"></i><font
+													style="color: Blue;"> 141 bevery Hills terrace | </font><br>
+												<i class="icon fa fa-house fa-6x" style="color: grey"></i><font
+													style="color: red;"> Buy Price : $135,000 | Sell
+													price : $175,000</font><br> Post Period : 10wks | <br> <i
+													class="icon fa fa-bed fa-6x"></i> 4 beds | <i
+													class="icon fa fa-bath fa-6x"></i> 3 bath | SqFt : 6500 | <a
+													href="#">more...</a>
+											</h5>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="images/home2.jpg" alt="Second Slide">
+                                                <div>
+
+                                                    <h5 style="font-weight: 200; opacity: 0.7; -moz-opacity: 0.30; background-color: white; border: 2px solid white; position: absolute; top: 80%; left: 59%; width: 350px; height: 75px; color: black;">
+												<i class="icon fa fa-home fa-lg" style="color: Green"></i><font
+													style="color: Blue;"> 141 bevery Hills terrace</font><br>
+												<i class="icon fa fa-house fa-6x" style="color: grey"></i><font
+													style="color: red;"> Buy Price : $135,000 | Sell
+													price : $175,000</font><br> Post Period : 10wks | <br> <i
+													class="icon fa fa-bed fa-6x"></i> 4 beds | <i
+													class="icon fa fa-bath fa-6x"></i> 3 bath | SqFt : 6500 | <a
+													href="#" style="color: blue">more...</a>
+											</h5>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="images/home4.jpg" alt="Third Slide">
+                                                <div>
+
+                                                    <h5 style="font-weight: 200; opacity: 0.7; -moz-opacity: 0.30; background-color: white; border: 2px solid white; position: absolute; top: 80%; left: 59%; width: 350px; height: 75px; color: black;">
+												<i class="icon fa fa-home fa-lg" style="color: Green"></i><font
+													style="color: Blue;"> 141 bevery Hills terrace</font><br>
+												<i class="icon fa fa-house fa-6x" style="color: grey"></i><font
+													style="color: red;"> Buy Price : $135,000 | Sell
+													price : $175,000</font><br> Post Period : 10wks | <br> <i
+													class="icon fa fa-bed fa-6x"></i> 4 beds | <i
+													class="icon fa fa-bath fa-6x"></i> 3 bath | SqFt : 6500 | <a
+													href="#">more...</a>
+											</h5>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="images/home5.jpg" alt="Fourth Slide">
+                                                <div>
+
+                                                    <h5 style="font-weight: 200; opacity: 0.7; -moz-opacity: 0.30; background-color: white; border: 2px solid white; position: absolute; top: 80%; left: 59%; width: 350px; height: 75px; color: black;">
+												<i class="icon fa fa-home fa-lg" style="color: Green"></i><font
+													style="color: Blue;"> 141 bevery Hills terrace</font><br>
+												<i class="icon fa fa-house fa-6x" style="color: grey"></i><font
+													style="color: red;"> Buy Price : $135,000 | Sell
+													price : $175,000</font><br> Post Period : 10wks | <br> <i
+													class="icon fa fa-bed fa-6x"></i> 4 beds | <i
+													class="icon fa fa-bath fa-6x"></i> 3 bath | SqFt : 6500 | <a
+													href="#">more...</a>
+											</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Carousel controls -->
+                                        <a class="carousel-control left" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" style="padding: 15px; color: #fff; background-color: rgba(0, 0, 0, 0);"></span>
+                                        </a>
+                                        <a class="carousel-control right" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" style="padding: 15px; color: #fff; background-color: rgba(0, 0, 0, 0);"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </section>
+
+                            <!-- Contact Section -->
+                            <section class="success home-section ng-scope" id="modules" ng-controller="ModuleListCtrl">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12 text-center">
+                                            <h2 class="heading">Services</h2>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <p></p>
+                                        <br>
+                                    </div>
+                                    <div class="row">
+                                        <!-- ngRepeat: module in modules | filter: searchText | orderBy: '-downloads' | limitTo:16 -->
+                                        <div ng-repeat="module in modules | filter: searchText | orderBy: &#39;-downloads&#39; | limitTo:16" class="ng-scope">
+                                            <!-- ngIf: $index % 4 == 0 -->
+                                            <div class="clearfix ng-scope" ng-if="$index % 4 == 0"></div>
+                                            <!-- end ngIf: $index % 4 == 0 -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                <a ng-href="" title="Flip" href="">
+                                                    <div class="card dark module summary-inline">
+                                                        <div class="card-body">
+                                                            <i class="icon fa fa-cube fa-3x"></i>
+                                                            <div class="content">
+                                                                <div class="title fontSmall ng-binding">Electrical</div>
+                                                                <div class="sub-title ng-binding">
+                                                                    <span class="fa fa-user"></span> &nbsp; pascalgrimaud &nbsp; | &nbsp; <span class="fa fa-download"></span> &nbsp; 646
+                                                                </div>
+                                                            </div>
+                                                            <div class="clear-both"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- end ngRepeat: module in modules | filter: searchText | orderBy: '-downloads' | limitTo:16 -->
+                                        <div ng-repeat="module in modules | filter: searchText | orderBy: &#39;-downloads&#39; | limitTo:16" class="ng-scope">
+                                            <!-- ngIf: $index % 4 == 0 -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                <a ng-href="" title="" href="">
+                                                    <div class="card dark module summary-inline">
+                                                        <div class="card-body">
+                                                            <i class="icon fa fa-cube fa-3x"></i>
+                                                            <div class="content">
+                                                                <div class="title fontSmall ng-binding">Plumbing</div>
+                                                                <div class="sub-title ng-binding">
+                                                                    <span class="fa fa-user"></span> &nbsp; deepu105 &nbsp; | &nbsp; <span class="fa fa-download"></span> &nbsp; 429
+                                                                </div>
+                                                            </div>
+                                                            <div class="clear-both"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- end ngRepeat: module in modules | filter: searchText | orderBy: '-downloads' | limitTo:16 -->
+                                        <div ng-repeat="module in modules | filter: searchText | orderBy: &#39;-downloads&#39; | limitTo:16" class="ng-scope">
+                                            <!-- ngIf: $index % 4 == 0 -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                <a ng-href="" title="" href="">
+                                                    <div class="card dark module summary-inline">
+                                                        <div class="card-body">
+                                                            <i class="icon fa fa-cube fa-3x"></i>
+                                                            <div class="content">
+                                                                <div class="title fontSmall ng-binding">Interior Design
+                                                                </div>
+                                                                <div class="sub-title ng-binding">
+                                                                    <span class="fa fa-user"></span> &nbsp; cbornet &nbsp; | &nbsp; <span class="fa fa-download"></span> &nbsp; 342
+                                                                </div>
+                                                            </div>
+                                                            <div class="clear-both"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- end ngRepeat: module in modules | filter: searchText | orderBy: '-downloads' | limitTo:16 -->
+                                        <div ng-repeat="module in modules | filter: searchText | orderBy: &#39;-downloads&#39; | limitTo:16" class="ng-scope">
+                                            <!-- ngIf: $index % 4 == 0 -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                <a ng-href="" title="Flip" href="">
+                                                    <div class="card dark module summary-inline">
+                                                        <div class="card-body">
+                                                            <i class="icon fa fa-cube fa-3x"></i>
+                                                            <div class="content">
+                                                                <div class="title fontSmall ng-binding">Woodwork</div>
+                                                                <div class="sub-title ng-binding">
+                                                                    <span class="fa fa-user"></span> &nbsp; ruddell &nbsp; | &nbsp; <span class="fa fa-download"></span> &nbsp; 342
+                                                                </div>
+                                                            </div>
+                                                            <div class="clear-both"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- end ngRepeat: module in modules | filter: searchText | orderBy: '-downloads' | limitTo:16 -->
+                                        <div ng-repeat="module in modules | filter: searchText | orderBy: &#39;-downloads&#39; | limitTo:16" class="ng-scope">
+                                            <!-- ngIf: $index % 4 == 0 -->
+                                            <div class="clearfix ng-scope" ng-if="$index % 4 == 0"></div>
+                                            <!-- end ngIf: $index % 4 == 0 -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                <a ng-href="" title="" href="">
+                                                    <div class="card dark module summary-inline">
+                                                        <div class="card-body">
+                                                            <i class="icon fa fa-cube fa-3x"></i>
+                                                            <div class="content">
+                                                                <div class="title fontSmall ng-binding">Kitchen</div>
+                                                                <div class="sub-title ng-binding">
+                                                                    <span class="fa fa-user"></span> &nbsp; moifort &nbsp; | &nbsp; <span class="fa fa-download"></span> &nbsp; 246
+                                                                </div>
+                                                            </div>
+                                                            <div class="clear-both"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- end ngRepeat: module in modules | filter: searchText | orderBy: '-downloads' | limitTo:16 -->
+                                        <div ng-repeat="module in modules | filter: searchText | orderBy: &#39;-downloads&#39; | limitTo:16" class="ng-scope">
+                                            <!-- ngIf: $index % 4 == 0 -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                <a ng-href="" title="" href="">
+                                                    <div class="card dark module summary-inline">
+                                                        <div class="card-body">
+                                                            <i class="icon fa fa-cube fa-3x"></i>
+                                                            <div class="content">
+                                                                <div class="title fontSmall ng-binding">Roofing</div>
+                                                                <div class="sub-title ng-binding">
+                                                                    <span class="fa fa-user"></span> &nbsp; geraldhumphries &nbsp; | &nbsp; <span class="fa fa-download"></span> &nbsp; 242
+                                                                </div>
+                                                            </div>
+                                                            <div class="clear-both"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- end ngRepeat: module in modules | filter: searchText | orderBy: '-downloads' | limitTo:16 -->
+                                        <div ng-repeat="module in modules | filter: searchText | orderBy: &#39;-downloads&#39; | limitTo:16" class="ng-scope">
+                                            <!-- ngIf: $index % 4 == 0 -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                <a ng-href="" title="" href="">
+                                                    <div class="card dark module summary-inline">
+                                                        <div class="card-body">
+                                                            <i class="icon fa fa-cube fa-3x"></i>
+                                                            <div class="content">
+                                                                <div class="title fontSmall ng-binding">Swagger2markup</div>
+                                                                <div class="sub-title ng-binding">
+                                                                    <span class="fa fa-user"></span> &nbsp; atomfrede &nbsp; | &nbsp; <span class="fa fa-download"></span> &nbsp; 213
+                                                                </div>
+                                                            </div>
+                                                            <div class="clear-both"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- end ngRepeat: module in modules | filter: searchText | orderBy: '-downloads' | limitTo:16 -->
+                                        <div ng-repeat="module in modules | filter: searchText | orderBy: &#39;-downloads&#39; | limitTo:16" class="ng-scope">
+                                            <!-- ngIf: $index % 4 == 0 -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                <a ng-href="" title="" href="">
+                                                    <div class="card dark module summary-inline">
+                                                        <div class="card-body">
+                                                            <i class="icon fa fa-cube fa-3x"></i>
+                                                            <div class="content">
+                                                                <div class="title fontSmall ng-binding">Module</div>
+                                                                <div class="sub-title ng-binding">
+                                                                    <span class="fa fa-user"></span> &nbsp; pascalgrimaud &nbsp; | &nbsp; <span class="fa fa-download"></span> &nbsp; 205
+                                                                </div>
+                                                            </div>
+                                                            <div class="clear-both"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- end ngRepeat: module in modules | filter: searchText | orderBy: '-downloads' | limitTo:16 -->
+
+                                        <!-- end ngRepeat: module in modules | filter: searchText | orderBy: '-downloads' | limitTo:16 -->
+
+                                        <!-- end ngRepeat: module in modules | filter: searchText | orderBy: '-downloads' | limitTo:16 -->
+                                    </div>
+                                </div>
+                            </section>
+                    </div>
+                    <script async="" src="js/analytics.js"></script>
+                    <script type="text/javascript" async="" src="js/cse.js"></script>
+
+                    <!-- Footer -->
+                    <footer class="text-center">
+                        <div class="footer-above">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="footer-col col-md-4">
+                                        <div class="col-md-4 col-sm-12">
+                                            <h5 class="text-left">
+											<i class="fa fa-coffee fa-fw"></i> <a class="link" href="">Team</a>
+										</h5>
+                                            <h5 class="text-left">
+											<i class="fa fa-pencil fa-fw"></i> <a class="link" href="">Artwork</a>
+										</h5>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <h5 class="text-left">
+											<i class="fa fa-gavel fa-fw"></i> <a class="link" href="">Policies</a>
+										</h5>
+                                            <h5 class="text-left">
+											<i class="fa fa-gift fa-fw"></i> <a class="link" href="">Thanks</a>
+										</h5>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <h5 class="text-left">
+											<i class="fa fa-archive fa-fw"></i> <a class="link" href="">Archives</a>
+										</h5>
+                                        </div>
+                                    </div>
+                                    <div class="footer-col col-md-4">
+                                        <ul class="list-inline">
+                                            <li><a href="https://twitter.com/" target="_blank" class="btn-social btn-outline"><i
+												class="fa fa-fw fa-twitter"></i></a></li>
+                                            <li><a href="" target="_blank" class="btn-social btn-outline"><i
+												class="fa fa-fw fa-github"></i></a></li>
+                                            <li><a href="" target="_blank" class="btn-social btn-outline"><i
+												class="fa fa-fw fa-comments"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-col col-md-4 google-search">
+                                        <script>
+                                            (function() {
+                                                var cx = '004687894124070278856:-ryvp1pk0xi';
+                                                var gcse = document
+                                                    .createElement('script');
+                                                gcse.type = 'text/javascript';
+                                                gcse.async = true;
+                                                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//cse.google.com/cse.js?cx=' + cx;
+                                                var s = document
+                                                    .getElementsByTagName('script')[0];
+                                                s.parentNode.insertBefore(gcse, s);
+                                            })();
+                                        </script>
+                                        <div id="___gcse_0">
+                                            <div class="gsc-control-cse gsc-control-cse-en">
+                                                <div class="gsc-control-wrapper-cse" dir="ltr">
+                                                    <form class="gsc-search-box" accept-charset="utf-8">
+                                                        <table cellspacing="0" cellpadding="0" class="gsc-search-box">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="gsc-input">
+                                                                        <input autocomplete="off" type="text" size="10" class=" gsc-input" name="search" title="search" id="gsc-i-id1" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="en" dir="ltr" spellcheck="false" style="outline: none; background: url(&quot;https://www.google.com/cse/static/en/google_custom_search_watermark.gif&quot;) left center no-repeat rgb(255, 255, 255);">
+                                                                        <input type="hidden" name="bgresponse" id="bgresponse">
+                                                                    </td>
+                                                                    <td class="gsc-search-button">
+                                                                        <input type="button" value="Search" class="gsc-search-button" title="search">
+                                                                    </td>
+                                                                    <td class="gsc-clear-button">
+                                                                        <div class="gsc-clear-button" title="clear results">&nbsp;</div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table cellspacing="0" cellpadding="0" class="gsc-branding">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="gsc-branding-user-defined"></td>
+                                                                    <td class="gsc-branding-text">
+                                                                        <div class="gsc-branding-text">powered by</div>
+                                                                    </td>
+                                                                    <td class="gsc-branding-img"><img src="images/small-logo.png" class="gsc-branding-img"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </form>
+                                                    <div class="gsc-results-wrapper-overlay">
+                                                        <div class="gsc-results-close-btn" tabindex="0"></div>
+                                                        <div class="gsc-tabsAreaInvisible">
+                                                            <div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search
+                                                            </div>
+                                                            <span class="gs-spacer"> </span>
+                                                        </div>
+                                                        <div class="gsc-tabsAreaInvisible"></div>
+                                                        <div class="gsc-above-wrapper-area-invisible">
+                                                            <table cellspacing="0" cellpadding="0" class="gsc-above-wrapper-area-container">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="gsc-result-info-container">
+                                                                            <div class="gsc-result-info-invisible"></div>
+                                                                        </td>
+                                                                        <td class="gsc-orderby-container">
+                                                                            <div class="gsc-orderby-invisible">
+                                                                                <div class="gsc-orderby-label gsc-inline-block">Sort by:
+                                                                                </div>
+                                                                                <div class="gsc-option-menu-container gsc-inline-block">
+                                                                                    <div class="gsc-selected-option-container gsc-inline-block">
+                                                                                        <div class="gsc-selected-option">Relevance</div>
+                                                                                        <div class="gsc-option-selector"></div>
+                                                                                    </div>
+                                                                                    <div class="gsc-option-menu-invisible">
+                                                                                        <div class="gsc-option-menu-item gsc-option-menu-item-highlighted">
+                                                                                            <div class="gsc-option">Relevance</div>
+                                                                                        </div>
+                                                                                        <div class="gsc-option-menu-item">
+                                                                                            <div class="gsc-option">Date</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="gsc-adBlockInvisible"></div>
+                                                        <div class="gsc-wrapper">
+                                                            <div class="gsc-adBlockInvisible"></div>
+                                                            <div class="gsc-resultsbox-invisible">
+                                                                <div class="gsc-resultsRoot gsc-tabData gsc-tabdActive">
+                                                                    <table cellspacing="0" cellpadding="0" class="gsc-resultsHeader">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="gsc-twiddleRegionCell">
+                                                                                    <div class="gsc-twiddle">
+                                                                                        <div class="gsc-title">Web</div>
+                                                                                    </div>
+                                                                                    <div class="gsc-stats"></div>
+                                                                                    <div class="gsc-results-selector gsc-all-results-active">
+                                                                                        <div class="gsc-result-selector gsc-one-result" title="show one result">&nbsp;</div>
+                                                                                        <div class="gsc-result-selector gsc-more-results" title="show more results">&nbsp;</div>
+                                                                                        <div class="gsc-result-selector gsc-all-results" title="show all results">&nbsp;</div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td class="gsc-configLabelCell"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <div>
+                                                                        <div class="gsc-expansionArea"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gsc-modal-background-image" tabindex="0"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-below">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        Copyright © SujitBehera 2016 | <a href="https://github.com/sujitbehera27" target="_blank">Connect
+										with us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+                <div class="scroll-top page-scroll visible-xs visible-sm">
+                    <a class="btn btn-primary" href="#page-top"> <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- /#page-wrapper -->
+        </div>
+        <!-- /#wrapper -->
+    </div>
+    <!-- Javascript Libs -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/ace.js"></script>
+    <script type="text/javascript" src="js/mode-html.js"></script>
+    <script type="text/javascript" src="js/theme-github.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+    <script type="text/javascript" src="js/angular-1.4.8.min.js"></script>
+    <script type="text/javascript" src="js/angular-route-1.4.8.min.js"></script>
+
+    <!--App Javascript -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script type="text/javascript" src="js/services.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/marketplace-list.js"></script>
+    <script type="text/javascript" src="js/users.js"></script>
+
+    <!-- JavaScript -->
+
+</body>
+
+</html>

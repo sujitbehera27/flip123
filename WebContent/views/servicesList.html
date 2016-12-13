@@ -1,0 +1,36 @@
+<div class="container" ng-controller="serviceListController as sc">
+<div class="row">
+	<div class="col-lg-12 text-center">
+		<h2 class="heading">Services</h2>
+	</div>
+</div>
+<div class="text-center">
+	<p></p>
+	<br>
+</div>
+<div class="row">
+
+<div ng-repeat="service in sc.serviceListObject" class="ng-scope">
+    <!-- ngIf: $index % 4 == 0 -->
+    <div class="clearfix ng-scope" ng-if="$index % 4 == 0"></div>
+    <!-- end ngIf: $index % 4 == 0 -->
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <a ng-href="" title="Flip" href="">
+            <div class="card dark module summary-inline">
+                <div class="card-body">
+                    <i class="icon fa fa-cube fa-3x"></i>
+                    <div class="content">
+                        <div class="title fontSmall ng-binding">{{service.serviceName}}</div>
+                        <div class="sub-title ng-binding">
+                            <span class="fa fa-user"></span> &nbsp; {{service.technician}} &nbsp; | &nbsp; <span class="fa fa-download"></span> &nbsp; {{service.noOfServices}}
+                        </div>
+                    </div>
+                    <div class="clear-both"></div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+</div>
+</div>
