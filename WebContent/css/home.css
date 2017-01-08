@@ -63,11 +63,13 @@ hr.star-primary {
 header {
   text-align: center;
   color: #fff;
-  background: #3E8ACC; }
+ /*  background: #3E8ACC; */ }
   header .card .card-body {
     text-align: left; }
   header .card.summary-inline .card-body {
-    padding: 10px; }
+    padding-left: 10px;
+    padding-bottom:5px;
+    padding-top:5px; }
     header .card.summary-inline .card-body .content .title {
       font-size: 2em; }
   header .container {
@@ -90,7 +92,7 @@ header {
       margin-top: 20px; }
   header img {
     display: block;
-    margin: 0 auto 20px; }
+   /*  margin: 0 auto 20px; */ }
   header .intro-text .name {
     display: block;
     text-transform: uppercase;
@@ -435,4 +437,12 @@ single-checkbox {
 .modal {
     
     left: -350px;
+}
+.sectimage{
+	background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }

@@ -1,26 +1,33 @@
+
 [
-  {
-    "detaileItem": "Homes Flipped This Month",
-    "itemValue": 223
-  },
-  {
-    "detaileItem": "Available Flips",
-    "itemValue": 125
-  },
-  {
-    "detaileItem": "Flipped Dollar Value",
-    "itemValue": "$5.2 million"
-  },
-  {
-    "detaileItem": "Available Dollar value of Flips",
-    "itemValue": "$4.3 million"
-  },
-  {
-    "detaileItem": "Registers per day",
-    "itemValue": 743
-  },
-  {
-    "detaileItem": "Community strength",
-    "itemValue": 2530
-  }
+ {
+	  "fa":"icon fa fa-line-chart fa-3x",
+   "detaileItem": "Annual Flip Profit",
+   "itemValue": "$11.8 B"
+ },
+ {
+	  "fa":"icon fa fa-line-chart fa-3x",
+   "detaileItem": "Average Flip Profit",
+   "itemValue": "$59,000"
+ },
+ {
+	  "fa":"icon fa  fa-rocket fa-3x",
+   "detaileItem": "Homes Flipped This Year",
+   "itemValue": "199,553"
+ },
+ {
+	  "fa":"icon fa fa-home fa-3x",
+   "detaileItem": "Available Homes For Flip",
+   "itemValue": "485,400"
+ },
+ {
+	  "fa":"icon fa  fa-tachometer fa-3x",
+   "detaileItem": "Current Month Flips",
+   "itemValue": "14,149"
+ },
+ {
+	  "fa":"icon fa fa-line-chart fa-3x",
+   "detaileItem": "Flip Profit This Month",
+   "itemValue": "$834.8 M"
+ }
 ]

@@ -1,42 +1,50 @@
 [
   {
+	  "img":"images/glyphs/electrical.png",
     "serviceName": "Electrical",
     "technician": "pascalgrimaud",
-    "noOfServices": 646
+    "noOfServices": 25
   },
   {
+	  "img":"images/glyphs/plumber.png",
     "serviceName": "Plumbing",
     "technician": "deepu105",
-    "noOfServices": 429
+    "noOfServices": 31
   },
   {
+	  "img":"images/glyphs/interior1.png",
     "serviceName": "Interior Design",
     "technician": "corner",
-    "noOfServices": 342
+    "noOfServices": 43
   },
   {
+	  "img":"images/glyphs/wood1.png",
     "serviceName": "Woodwork",
     "technician": "ruddell",
-    "noOfServices": 342
+    "noOfServices": 22
   },
   {
+	  "img":"images/glyphs/kitchen1.png",
     "serviceName": "Kitchen",
     "technician": "moifort",
-    "noOfServices": 246
+    "noOfServices": 18
   },
   {
+	  "img":"images/glyphs/plumber.png",
     "serviceName": "Roofing",
     "technician": "geraldhumphries",
-    "noOfServices": 242
+    "noOfServices": 62
   },
   {
-    "serviceName": "Swagger2markup",
+	  "img":"images/glyphs/painter3.png",
+    "serviceName": "Paint",
     "technician": "atomfrede",
-    "noOfServices": 213
+    "noOfServices": 43
   },
   {
-    "serviceName": "Module",
+	  "img":"images/glyphs/tiles1.png",
+    "serviceName": "Tile Work",
     "technician": "pascalgrimaud",
-    "noOfServices": 205
+    "noOfServices": 33
   }
 ]
