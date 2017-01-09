@@ -3,7 +3,8 @@
  {
 	  "fa":"icon fa fa-line-chart fa-3x",
    "detaileItem": "Annual Flip Profit",
-   "itemValue": "$11.8 B"
+   "itemValue": "$11.8",
+   "suffix":"billion"
  },
  {
 	  "fa":"icon fa fa-line-chart fa-3x",
@@ -28,6 +29,7 @@
  {
 	  "fa":"icon fa fa-line-chart fa-3x",
    "detaileItem": "Flip Profit This Month",
-   "itemValue": "$834.8 M"
+   "itemValue": "$834.8",
+	   "suffix":"million"
  }
 ]
