@@ -301,24 +301,32 @@ ng\:form {
                 <div class="side-body" id="page-top">
                     <div class="home-container ng-scope">
                         <!-- Header -->
-                        <header class="home-section">
-                            <div class="sectimage" style="background-image: url(images/house5.jpeg);">
-                                <div class="container">
+                       <!--  <header class="home-section"> -->
+                            <section class="topSection" style="background-image: url(images/house5.jpeg);padding: 0%;">
+                             <div class="banner-gradient-overlay">
+
+		<div class="banner-content">
+
+			
+		</div> <!-- .banner-content -->
+
+	</div> 
+                                
                                    <div class="row">
-                                        <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="searchBoxContainer">
                                             <div class="row control-group" style="background-color: #0b0d2b; opacity: 0.7; border-radius: 5px;">
 	                                             <div class="row" style="margin-left: 10px;margin-top: 8px;">
 	                                                <div id="locationField" class="form-group col-xs-12 floating-label-form-group controls" style="width: 90%;">
 	                                                   <input type="text" id="autocomplete"  class="form-control search-text ng-pristine ng-untouched ng-invalid ng-invalid-required" onFocus="geolocate()" placeholder="Search by Neighborhood, City, or Address" id="name" required="" data-validation-required-message="Please enter a module to search">
 													</div>
-													<div class="col-sm-1" style="top:-5px;right:8px;">
+													<div class="col-sm-1" style="top:-5px;right:8px;color: #e2dbdb;">
 			                                         	<i class="icon fa fa-search fa-3x"></i>
 			                                         </div>
 			                                     </div>
 		                                         
-													<div class="btn-toolbar" role="toolbar" style="margin-left: 5px;">
+													<div class="btn-toolbar" role="toolbar" style="margin-left: 5px;color: #e2dbdb">
     													
-    													<div class="btn-group btn-group-xs" style="top:5px;"><span>Search By : </span></div>
+    													<div class="btn-group btn-group-xs" style="top:5px;;"><span>Search By : </span></div>
 													    <div class="btn-group btn-group-xs">
 													    
 													        <button type="button" class="btn btn-warning btn-xs dropdown-toggle" data-toggle="dropdown" href="#">
@@ -365,7 +373,7 @@ ng\:form {
 															    <li><a href="#">$300,000 +</a></li>
 													        </ul>
 													    </div>
-													    <div class="btn-group btn-group-xs" style="margin-left: 40%;">
+													    <div class="btn-group btn-group-xs" style="margin-left: 35%;">
 													      <button type="button" class="btn btn-warning btn-xs" data-target="#myModal" style="color: blue;">Recent Searches</button>
 				                                   		</div>
 				                                   		<div class="btn-group btn-group-xs">
@@ -376,18 +384,18 @@ ng\:form {
                                             </div>
                                    		</div>  
                                   </div>
-                                 <!-- <div ng-include="'views/overallDetails.html'"></div> -->
-                                 
-                                 <!-- <div style="height: 350px;width:100%: grey;color: white;">asdasd</div> -->
-                                     
-                                </div>
-                                <div id="footer1" style="margin-top:200px;height: 100px;background-color: #192731;opacity:0.7;">
-								     <!--  <div class="container"> -->
-								       <div ng-include="'views/overallDetails.html'"></div>
-								     <!--  </div> -->
+                                
+                               
+                               	<!--    <div class="row" >	 --> 
+                               		 <div id="footer1" class="footerContainer" ng-include="'views/overallDetails.html'">
+								   
+								       <!-- <div ng-include="'views/overallDetails.html'"></div> -->
+								   
+								   <!--  </div> -->
 								    </div>
-                            </div>
-                        </header>
+								    
+                            </section>
+                        <!-- </header> -->
 
                         <section class="home-section" id="fliplisting">
                         <div class="row" style="width: 100%;">
