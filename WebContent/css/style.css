@@ -1604,3 +1604,10 @@ body.media #stack-zone .column {
   border: 2px solid darkgray;
   color: #000; text-shadow: 1px 1px 0 #fff;
 }
+.leftRail .leftRailContainer {
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 2em;
+}

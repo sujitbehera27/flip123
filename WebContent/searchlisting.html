@@ -85,108 +85,78 @@
 					<div class="home-container ng-scope">
 						<!-- Header -->
 						<!--  <header class="home-section"> -->
-						<section class="topSection"
-							style="background-image: url(images/house5.jpeg); padding: 0%;">
-							<div class="banner-gradient-overlay">
-								<div class="banner-content"></div>
-							</div>
-
-							<div class="row">
-								<div class="searchBoxContainer">
-									<div class="row control-group"
-										style="background-color: #0b0d2b; opacity: 0.7; border-radius: 5px;">
-										<div class="row" style="margin-left: 10px; margin-top: 8px;">
-											<div id="locationField"
-												class="form-group col-xs-12 floating-label-form-group controls"
-												style="width: 90%;">
-												<input type="text" id="autocomplete"
-													class="form-control search-text ng-pristine ng-untouched ng-invalid ng-invalid-required"
-													onFocus="geolocate()"
-													placeholder="Search by Neighborhood, City, or Address"
-													id="name" required=""
-													data-validation-required-message="Please enter a module to search">
-											</div>
-											<div class="col-sm-1"
-												style="top: -5px; right: 8px; color: #e2dbdb;">
-												<i class="icon fa fa-search fa-3x"></i>
-											</div>
-										</div>
-
-										<div class="btn-toolbar" role="toolbar"
-											style="margin-left: 5px; color: #e2dbdb" ng-include="'views/searchfilters.html'">
-										</div>
-									</div>
+						<section class="home-section" id="fliplisting">
+							<div class="row" style="width: 100%;">
+								<div class="col-lg-12 text-center" style="color: #074b6d;">
+									<h3 class="heading">House Details</h3>
 								</div>
 							</div>
+							<div class="row" style="height:600px;width:100%;">
+								<div ng-include="'carousal3.html'"></div>
+							</div>
+						</section>
+						
 
+						<div class="row">
+							<div class="description floatClear"
+								style="width: 70%; height: 100%; margin-left: 15%;">
 
-							<!--    <div class="row" >	 -->
-							<div id="footer1" class="footerContainer" ng-include="'views/overallDetails.html'">
+								<h2 class="last-child">
+									<span class="last-child">Description</span>
+								</h2>
 
-								<!-- <div ng-include="'views/overallDetails.html'"></div> -->
-
-								<!--  </div> -->
+								<p itemprop="description">
+									This property is eligible under the Freddie Mac First look
+									initiative through 1/26/17. This custom ranch is ready to go.
+									Updated furnace HWBB, with freshly painted interior and
+									gleaming hardwood floors. The basement is full with high
+									overhead. EIK with separate dining area available. The price is
+									right, mske your appointment. "R". <a
+										class="deepLinkExternalUrl deepLink last-child"
+										data-activity-type="lead" data-activity-sub-type="website"
+										rev="external_lead" name="EXTERNAL_DETAILS"
+										href="http://listhub.century21.com/pages/RFGC21/8BSYNK/?channel=homescape"
+										target="_blank" rel="nofollow"> Click here to learn more
+										about this listing.. </a>
+								</p>
+								<ul>
+									<li>MLS ID# 1708907</li>
+									<li>Year Built: n/a</li>
+									<li class="last-child">1 Days on site</li>
+								</ul>
+								<ul class="last-child">
+									<li>Single Family Home</li>
+									<li>Beds: 3</li>
+									<li class="last-child">Baths: 1 Full</li>
+								</ul>
 							</div>
 
-						</section>
+
+						</div>
+
+
+
+
+
 						<!-- </header> -->
 
-						<section class="home-section" id="fliplisting">
+						<!-- <section class="home-section" id="fliplisting">
 							<div class="row" style="width: 100%;">
 								<div class="col-lg-12 text-center" style="color: #074b6d;">
 									<h3 class="heading">Flip Listings</h3>
 								</div>
 							</div>
 							<div class="row">
-								<div ng-include="'views/listings.html'"></div>
+								<div ng-include="'views/similarhouses.html'"></div>
 							</div>
-						</section>
+						</section> -->
 
-						<!-- about and news section -->
-						<section id="about" class="home-section">
-							<div class="container">
-								<div class="row">
-									<div class="col-lg-12 text-center" style="color: #074b6d;">
-										<h2 class="heading">RealEstate news and events</h2>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12" style="color: #074b6d;">
-										<section class="container">
-											<div ng-include="'views/newsAndEvents.html'"></div>
-										</section>
-									</div>
-								</div>
-							</div>
-						</section>
+
 					</div>
 
-					<section class="home-section" id="histflip">
-						<div class="row no-margin">
-							<div class="col-lg-12 text-center" style="color: #074b6d;">
-								<h2 class="heading">Successful Flips</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div ng-include="'views/carousal.html'"></div>
-						</div>
-					</section>
 
-					<header class="home-section" id="modules">
-						<!-- Contact Section -->
-						<!--  <section class="success home-section ng-scope" id="modules" > -->
 
-						<div class="row">
-							<div class="col-lg-12 text-center">
-								<h2 class="heading" style="color: #074b6d;">Services</h2>
-							</div>
-						</div>
-						<div class="sectimage"
-							style="background-image: url(images/Services.jpg);">
-							<div ng-include="'views/servicesList.html'"></div>
-						</div>
-						<!--  </section> -->
-					</header>
+
 				</div>
 
 				<!-- Footer -->
