@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Awesome Markers Example: With Bootstrap</title>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/leaflet.awesome-markers.css">
+
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+  <![endif]-->
+
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+</head>
+<body>
+  <div id="map" style="position:absolute; top:0; bottom:0; width:100%;"></div>
+
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  <script src="../dist/leaflet.awesome-markers.js"></script>
+
+  <script>
+    var map = L.map('map').setView([36.318656, -94.191774], 13);
+
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '',
+      key: 'AIzaSyB4yZMLDMvhonwuoc-pcviy4rfKAaNNz2E'
+    }).addTo(map);
+
+    L.marker([36.318656, -94.191774], {icon: L.AwesomeMarkers.icon({icon: 'home', prefix: 'glyphicon', markerColor: 'red', spin:true}) }).addTo(map);
+    L.marker([36.3150055,-94.1935523], {icon: L.AwesomeMarkers.icon({icon: 'certificate', prefix: 'glyphicon', markerColor: 'blue'}) }).addTo(map);
+    L.marker([36.3141686,-94.1855804], {icon: L.AwesomeMarkers.icon({icon: 'doctor', prefix: 'glyphicon', markerColor: 'purple'}) }).addTo(map);
+    L.marker([36.3156751,-94.2186221], {icon: L.AwesomeMarkers.icon({icon: 'shopping-cart', prefix: 'glyphicon', markerColor: 'green'}) }).addTo(map);
+    L.marker([36.3141686,-94.1855804], {icon: L.AwesomeMarkers.icon({icon: 'star', prefix: 'glyphicon', markerColor: 'blue', iconColor: 'black'}) }).addTo(map);
+    L.marker([36.3186979,-94.2092835], {icon: L.AwesomeMarkers.icon({icon: 'tags', prefix: 'fa', markerColor: 'orange'}) }).addTo(map);
+
+    L.marker([36.3055604,-94.1878969], {icon: L.AwesomeMarkers.icon({icon: 'building', prefix: 'fa', markerColor: 'darkred'}) }).addTo(map);
+    L.marker([36.3295548,-94.2071379], {icon: L.AwesomeMarkers.icon({icon: 'hospital', prefix: 'fa', markerColor: 'darkblue'}) }).addTo(map);
+    L.marker([36.327132,-94.2074812], {icon: L.AwesomeMarkers.icon({icon: 'hospital', prefix: 'fa', markerColor: 'cadetblue'}) }).addTo(map);
+    L.marker([51.930295,4.530745], {icon: L.AwesomeMarkers.icon({icon: 'play', prefix: 'fa', markerColor: 'darkpurple'}) }).addTo(map);
+    L.marker([51.925055,4.512806], {icon: L.AwesomeMarkers.icon({icon: 'barcode', prefix: 'fa', markerColor: 'darkgreen'}) }).addTo(map);
+    L.marker([51.925902,4.505768], {icon: L.AwesomeMarkers.icon({icon: 'inbox', prefix: 'fa', markerColor: 'darkblue'}) }).addTo(map);
+  </script>
+</body>
+</html>

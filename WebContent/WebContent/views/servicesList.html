@@ -1,0 +1,59 @@
+<div class="container" ng-controller="serviceListController as sc">
+
+	<div class="text-center">
+		<p></p>
+		<br>
+	</div>
+	<div class="row" style="margin-top: 15%;">
+
+		<div ng-repeat="service in sc.serviceListObject" class="ng-scope">
+			<!-- ngIf: $index % 4 == 0 -->
+			<div class="clearfix ng-scope" ng-if="$index % 4 == 0"></div>
+			<!-- end ngIf: $index % 4 == 0 -->
+			<!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <a ng-href="" title="Flip" href="">
+            <div class="card dark module summary-inline">
+                <div class="card-body">
+                    <div ><h4><img style="width:80px;height:80px;margin-right: 5%;" src={{service.img}}>{{service.serviceName}}</h4></div>
+                    <div class="content" style="background-image: url({{service.img}});background-position: 5% 40;">
+                    <div class="content" style="float: right;">
+                        <div class="title fontSmall ng-binding">{{service.serviceName}}</div>
+                        <div class="sub-title ng-binding">
+                            <span class="fa fa-user"></span>  {{service.technician}} &nbsp; | &nbsp; <span class="fa fa-phone"></span>
+                        </div>
+                    </div>
+                    <div class="clear-both"></div>
+                </div>
+            </div>
+        </a>
+    </div> -->
+
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-10">
+				<a ng-href="" title="Flip" href="">
+					<div class="card dark module summary-inline">
+						<div class="card-body">
+							<!-- <i class={{service.fa}}></i> -->
+
+							<img
+								style="width: 40px; height: 40px; margin-left: -5px; background-color: white; border-radius: 5px;"
+								src={{service.img}}>
+
+							<div class="content">
+								<div class="title fontSmall ng-binding"
+									style="padding-bottom: 5px; font-size: 20px;">{{service.serviceName}}</div>
+								<div class="sub-title ng-binding">
+									<span class="fa fa-user"></span> &nbsp; {{service.technician}}
+									&nbsp; | &nbsp; <span class="fa fa-download"></span> &nbsp;
+									{{service.noOfServices}}
+								</div>
+							</div>
+							<div class="clear-both"></div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+
+	</div>
+</div>
