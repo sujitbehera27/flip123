@@ -26,5 +26,11 @@ myApp.controller('flipListController', function ($scope,flipListService) {
 	fc.show_hide_row = function(row) {
 		$("#" + row).toggle();
 	}
+	fc.addropenSrchDet=function()
+    {
+		
+		//alert($scope.addr);
+        //How to retrieve the value of textbox
+    }
 });
 		 

@@ -65,9 +65,10 @@
 <script src="scripts/services/servicelist.service.js"></script>
 <script src="scripts/controllers/serviceList.controller.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript"></script>
 </head>
 
-<body class="flat-blue" ng-app="jhipster.home"
+<body class="flat-blue" ng-app="flipper.home"
 	ng-controller="flipListController as fc">
 
 	<div class="app-container home">
@@ -108,7 +109,7 @@
 											</div>
 											<div class="col-sm-1"
 												style="top: -5px; right: 8px; color: #e2dbdb;">
-												<a href="searchlisting.html"><i class="icon fa fa-search fa-3x"></i></a>
+												<a href="searchlisting.html" ng-click="openSrchDet()"><i class="icon fa fa-search fa-3x"></i></a>
 											</div>
 										</div>
 

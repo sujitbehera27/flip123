@@ -23,7 +23,7 @@ $('.navbar-collapse ul li a').click(function () {
 (function () {
     'use-strict';
 
-    angular.module('jhipster.home', ['jhipster.service', 'marketplace.list', 'jhipster.users'])
+    angular.module('flipper.home', ['jhipster.service', 'marketplace.list', 'jhipster.users'])
         .config([
           '$interpolateProvider',
             function ($interpolateProvider) {
